@@ -158,7 +158,7 @@ function addsw6() {
 function addToCart(){
     document.getElementById('cartList').innerHTML = "";
     for(var i=0; i<cust_order.length; i++){
-        document.getElementById('cartList').innerHTML += '<li class="list-group-item">' + cust_order[i].prod_name + ' (PHP: '+ cust_order[i].prod_price +'.00) <button type="button" onclick="removeCart('+ i + ')">Remove</button></li>'
+        document.getElementById('cartList').innerHTML += '<li class="list-group-item" class="col-sm-4;">' + cust_order[i].prod_name + ' (PHP: '+ cust_order[i].prod_price +'.00) <button type="button" style="font-size:50%;" onclick="removeCart('+ i + ')">Remove</button></li>'
     }
 }
 
