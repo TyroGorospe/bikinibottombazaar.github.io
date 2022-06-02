@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bikini Bottom Bazaar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+	<style>
+		body {
+		  background-position: center; /* Center the image */
+		  background-repeat: no-repeat; /* Do not repeat the image */
+		  background-size: cover; /* Resize the background image to cover the entire container */
+		    background-image:-webkit-linear-gradient(60deg,rgba(218, 169, 215, 0.637),rgba(128, 174, 235, 0.904));
+			background-position: center 0;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-ms-background-size: cover;
+		  font-family: 'Concert One', cursive;
+		}
+		
+		.sidebar{
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: #0457a0;
+		  overflow-x: hidden;
+		  transition: 0.5s;
+		  padding-top: 60px;
+		}
+
+		.sidebar a{
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 10px;
+		  font-family: 'Press Start 2P', cursive;
+		  color: #fff56c;
+		  display: block;
+		  transition: 0.3s;
+		}
+
+		.sidebar a:hover{
+		  color: #B75CFF;
+		}
+
+		.sidebar .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+
+		.openbtn {
+		  font-size: 20px;
+		  cursor: pointer;
+		  background-color:transparent;
+		  color: #fff56c;
+		  padding: 10px 15px;
+		  border: none;
+		  background-repeat: no-repeat;
+		}
+
+		.openbtn:hover {
+		  background-color: transparent;
+		  background-repeat: no-repeat;
+		}
+
+		#main {
+		  transition: margin-left .5s;
+		  padding: 16px;
+		}
+
+		/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+		@media screen and (max-height: 450px) {
+		  .sidebar {padding-top: 15px;}
+		  .sidebar a {font-size: 18px;}
+		}
+		
+		.col{
+			border-radius: 30px;
+			padding-bottom: 30px;
+			margin-top: 0px;
+			margin-bottom: 30px;
+			margin-left: 35px;
+			margin-right: 35px;
+		}
+		
+		 h1, h2, h5{
+			font-family: 'Press Start 2P', cursive;
+			color: #fff56c;
+			padding: 5px;
+			text-align: center;
+		}
+		
+		h4, h6, p, label{
+			font-family: 'Concert One', cursive;
+			color: #fff56c;
+			padding: 5px;
+			font-size: 35px;
+			text-align: center;
+		}
+		
+		button{
+			padding: 10px;
+			font-family: 'Press Start 2P', cursive;
+		}
+		
+		a:hover{
+			text-decoration: none;
+		}
+		
+		code{
+			font-family: 'Concert One', cursive;
+			color: #fff56c;
+			padding: 5px;
+			font-size: 20px;
+		}
+		
+		#big{
+			font-size: 20px;
+			padding-bottom: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	  <h1>SHOP INFO</h1>
+	  <hr>
+	  <a href="index.html">Homepage</a>
+	  <hr>
+	  <a href="about.html">About Page</a>
+	  <hr>
+      <h5>Categories</h5>
+	  <a href="spongebob.html">Spongebob</a>
+	  <a href="patrick.html">Patrick</a>
+	  <a href="squidward.html">Squidward</a>
+	  <a href="sandy.html">Sandy Cheeks</a>
+	  <hr>
+	</div>
+
+	<div id="main">
+	  <button class="openbtn" onclick="openNav()"><img src="logo.png" alt="Logo" style="width:60px;"></button>
+	</div>
+
+	<div class="row" style="padding-left:30px;">
+		<div class="col-sm-3">
+		 <div class="container">
+		  	  <img src="patrick.png" alt="sbb" style="width:100%">
+		 </div>
+		</div>
+		 <div class="col-sm-9">
+		  <div class="container">
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1>Patrick Star</h1>
+		 </div>
+		 </div>
+	</div>
+	<hr>
+	<div class="row">
+	  <div class="col">
+		<div class="card" style="width:400px; background-color:#B75CFF;">
+		  <img class="card-img-top" src="http://cdn.shopify.com/s/files/1/0150/0643/3380/products/SB-PatMug-20oz-merch1_grande.jpg?v=1604944000" alt="Card image">
+		  <div class="card-body">
+			<h4 class="card-title" id="ps1" >Patrick mug</h4>
+			<p class="card-text" id="psp1">PHP 200</p>
+			<a href="#" class="btn btn-primary" style="width:100%; background-color:#0457a0; color:#fff56c;">Add To Cart</a>
+		  </div>
+		 </div>
+		<br>
+		<div class="card" style="width:400px; background-color:#B75CFF;">
+		  <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0150/0643/3380/products/Viacom_Spongebob_ThrowPillow16inX16in_PRTGENSLG16B_00094_600x.jpg?v=1563223242" alt="Card image">
+		  <div class="card-body">
+			<h4 class="card-title" id="ps2">Patrick pillow</h4>
+			<p class="card-text" id="psp2">PHP 150</p>
+			<a href="#" class="btn btn-primary" style="width:100%; background-color:#0457a0; color:#fff56c;">Add To Cart</a>
+		  </div>
+		 </div>
+		<br>
+		<div class="card" style="width:400px; background-color:#B75CFF;">
+		  <img class="card-img-top" src="https://cf.shopee.ph/file/5673e333a77e7d88f0f948cc007d5ff9 " alt="Card image">
+		  <div class="card-body">
+			<h4 class="card-title" id="ps3">Patrick plush</h4>
+			<p class="card-text" id="psp3">PHP 150</p>
+			<a href="#" class="btn btn-primary" style="width:100%; background-color:#0457a0; color:#fff56c;">Add To Cart</a>
+		  </div>
+		 </div>
+	  </div>
+	  <div class="col">
+		<div class="card" style="width:400px; background-color:#B75CFF;">
+		  <img class="card-img-top" src="https://ae01.alicdn.com/kf/H325c5176a39e4d41804955c73352872eV/Kawaii-SpongeBob-SquarePants-Patrick-Star-Diagonal-Shoulder-Bag-PU-Texture-Fashion-Mobile-Phone-Bag-Cute-Children.jpg" style="width:100%; height:400px;" alt="Card image">
+		  <div class="card-body">
+			<h4 class="card-title" id="ps4">Patrick bag</h4>
+			<p class="card-text" id="psp4">PHP 500</p>
+			<a href="#" class="btn btn-primary" style="width:100%; background-color:#0457a0; color:#fff56c;">Add To Cart</a>
+		  </div>
+		 </div>
+		<br>
+		<div class="card" style="width:400px; background-color:#B75CFF;">
+		  <img class="card-img-top" src="https://www.kindpng.com/picc/m/99-997778_funko-pop-patrick-star-hd-png-download.png" alt="Card image">
+		  <div class="card-body">
+			<h4 class="card-title" id="ps5">Patrick funkopop</h4>
+			<p class="card-text" id="psp5">PHP 999</p>
+			<a href="#" class="btn btn-primary" style="width:100%; background-color:#0457a0; color:#fff56c;">Add To Cart</a>
+		  </div>
+		 </div>
+		<br>
+		<div class="card" style="width:400px; background-color:#B75CFF;">
+		  <img class="card-img-top" src="https://m.media-amazon.com/images/I/B139gQIcJCS._CLa%7C2140%2C2000%7C71sN1HjcxqL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX679_.png " alt="Card image">
+		  <div class="card-body">
+			<h4 class="card-title" id="ps6">Patrick shirt</h4>
+			<p class="card-text" id="psp6">PHP 150</p>
+			<a href="#" class="btn btn-primary" style="width:100%; background-color:#0457a0; color:#fff56c;">Add To Cart</a>
+		  </div>
+		 </div>
+	  </div>
+	  <div class="col">
+		<h2>My Cart</h2>
+		<h2>Checkout Details</h2>
+		<h2>Checkout Details</h2>
+			<form action="http://sirjm.infinityfreeapp.com/checkout.php?i=1" method="get">
+				<label for="cust_name" class="form-label">Name: </label>
+				<input id="cust_name" class="form-control" type="text" name="cust_name"><br>
+				<label for="cust_addr" class="form-label">Address: </label>
+				<input id="cust_addr" class="form-control" type="text" name="cust_addr"><br>
+				<label for="cust_email" class="form-label">Email: </label>
+				<input id="cust_email" class="form-control" type="text" name="cust_email"><br>
+				<input class="form-control" style="background-color:#0457a0; color:#fff56c;" type="submit">
+			</form>
+	  </div>
+	</div>
+	<script>
+
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidebar").style.width = "0";
+		  document.getElementById("main").style.marginLeft= "0";
+		}
+
+		var pm1 = {
+		prod_name: "Patrick mug",
+		prod_price: 200
+		}
+
+		var pp1 = {
+		prod_name: "Patrick pillow",
+		prod_price: 150
+		}
+
+		var pp2 = {
+		prod_name: "Patrick plush",
+		prod_price: 150
+		}
+
+		var pb1 = {
+		prod_name: "Patrick bag",
+		prod_price: 500
+		}
+
+		var pf1 = {
+		prod_name: "Patrick funkopop",
+		prod_price: 999
+		}
+
+		var ps1 = {
+		prod_name: "Patrick shirt",
+		prod_price: 150
+		}
+	</script>
+</body>
+</html>
