@@ -181,10 +181,5 @@ function removeCart(i){
 }
 
 function submitForm(){
-    var cust_name = document.getElementById('cust_name').value;
-    var cust_addr = document.getElementById('cust_addr').value;
-    var cust_email = document.getElementById('cust_email').value;
-    //console.log(cust_name);
-    //console.log(cust_addr);
-    //console.log(cust_email);
+	document.getElementById('cust_order').value = JSON.stringify(cust_order);
 }
