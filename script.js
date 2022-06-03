@@ -160,11 +160,23 @@ function addToCart(){
     for(var i=0; i<cust_order.length; i++){
         document.getElementById('cartList').innerHTML += '<li class="list-group-item" class="col-sm-4;">' + cust_order[i].prod_name + ' (PHP: '+ cust_order[i].prod_price +'.00) <button type="button" style="font-size:50%;" onclick="removeCart('+ i + ')">Remove</button></li>'
     }
+	price();
+}
+
+function price(){
+	totalCount = 0;
+    document.getElementById('total').innerHTML = totalCount;
+	for (var i=0; i<cust_order.length; i++){
+		totalCount = cust_order[i].prod_price + totalCount;
+		console.log("price: "+ totalCount);
+    	document.getElementById('total').innerHTML = totalCount;
+	}
 }
 
 function removeCart(i){
     cust_order.splice(i, 1);
     console.log(cust_order);
+	price();
     addToCart();
 }
 
